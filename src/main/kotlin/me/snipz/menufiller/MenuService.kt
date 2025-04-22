@@ -2,11 +2,9 @@ package me.snipz.menufiller
 
 import org.slf4j.LoggerFactory
 
-class MenuService : IMenuService {
+object MenuService : IMenuService {
 
-    companion object {
-        val logger = LoggerFactory.getLogger(MenuService::class.java)!!
-    }
+    val logger = LoggerFactory.getLogger(MenuService::class.java)!!
 
     private val fillers = mutableMapOf<String, MenuFiller>()
 
